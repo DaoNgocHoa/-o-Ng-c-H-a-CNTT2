@@ -1,1 +1,42 @@
+/* bài tập 1 chương 1 */
+#include <iostream>
 
+using namespace std;
+
+struct PhanSo
+{
+        int a ;
+        int b ;
+        
+};
+int nhap(PhanSo &PS)
+{
+    
+    cout<<"nhập vào  tu so: ";
+    cin>> PS.a;
+    do{
+        cout<<"nhap vao mau so: ";
+        cin>> PS.b;
+            if (PS.b == 0)
+                {
+                    cout<<"khong hop le nhap lai";
+                }
+            if (PS.b < 0)
+            {
+                PS.a = PS.a*-1;
+                PS.b = PS.b*-1;
+            }
+    }while(PS.b == 0);
+}
+int xuat(PhanSo &PS)
+{
+    
+    cout<<"phan so la:"<<PS.a << "/" <<PS.b;
+}
+int main()
+{
+    PhanSo PS;
+    nhap(PS);
+    xuat(PS);
+    return 0;
+}
