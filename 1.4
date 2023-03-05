@@ -1,0 +1,33 @@
+/*tọa độ Oxyz*/
+#include <iostream>
+
+using namespace std;
+
+struct Diem
+{
+    int x;
+    int y;
+    int z;
+};
+int nhap(Diem &d)
+{
+    cout << "nhap vao x";
+    cin >> d.x;
+    cout << "nhap vao y";
+    cin >> d.y;
+    cout<<"nhap vao z";
+    cin >> d.z;
+    return 0;
+}
+int xuat(Diem &d)
+{
+    cout << "(" << d.x << ";" << d.y << ";" << d.z<< ")";
+    return 0;
+}
+int main()
+{
+    Diem d;
+    nhap(d);
+    xuat(d);
+    return 0;
+}
