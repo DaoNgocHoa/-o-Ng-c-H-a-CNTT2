@@ -1,0 +1,29 @@
+#include <iostream>
+
+using namespace std;
+
+struct Donthuc
+{
+    int a,n;
+};
+int nhap(Donthuc &DT)
+{
+    cout << "nhap vao a";
+    cin >> DT.a;
+    cout << "nhap vao n";
+    cin >> DT.n;
+    return 0;
+    
+}
+int xuat(Donthuc &DT)
+{
+    cout << DT.a << "x^" << DT.n;
+    return 0;
+}
+int main()
+{
+    Donthuc DT;
+    nhap(DT);
+    xuat(DT);
+    return 0;
+}
