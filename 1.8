@@ -1,0 +1,28 @@
+using namespace std;
+
+struct VectorPT
+{
+    int a,b,c;
+};
+int nhap(VectorPT &d)
+{
+     cout << "nhap vao a";
+     cin >> d.a;
+     cout << "nhap vao b";
+     cin >> d.b;
+     cout << "nhap vao";
+     cin >> d.c;
+}
+int xuat(VectorPT &d)
+{
+    cout << d.a <<"x +"<<d.b<<"y +"<<d.c << "=0";
+    cout <<"\nvector pháp tuyến là:"<<"("<< d.a <<";"<<d.b<<")"; 
+    return 0;
+}
+int main ()
+{
+    VectorPT d;
+    nhap(d);
+    xuat(d);
+    return 0;
+}
